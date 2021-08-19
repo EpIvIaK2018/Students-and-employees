@@ -1,4 +1,4 @@
-package ru.ecxeption;
+package ru.exception;
 
 public class EmployeeAndStudentException extends Throwable{
     public EmployeeAndStudentException(String message){

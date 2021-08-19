@@ -1,6 +1,6 @@
 package ru.person;
 
-import ru.ecxeption.EmployeeAndStudentException;
+import ru.exception.EmployeeAndStudentException;
 
 public class Student extends Person {
     public Student(String name, int age, String university) throws EmployeeAndStudentException {

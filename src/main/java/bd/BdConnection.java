@@ -2,7 +2,7 @@ package bd;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import ru.ecxeption.EmployeeAndStudentException;
+import ru.exception.EmployeeAndStudentException;
 import ru.person.*;
 
 import java.sql.*;
@@ -87,7 +87,6 @@ public class BdConnection {
             ListAllUsers.add(employeeCurrently);
             personToIdMap.put(employeeCurrently, result.getInt("id"));
         }
-        //connect.close();
         return ListAllUsers;
     }
 
@@ -108,7 +107,6 @@ public class BdConnection {
     public void deleteAll() throws SQLException{
         try {
             connect = DriverManager.getConnection(URL, login, password);
-            //не удаляется студент (если он один там)
             String qryDelete = "DELETE FROM student";
             Statement statement = connect.createStatement();
             statement.executeUpdate(qryDelete);

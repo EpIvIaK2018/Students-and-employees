@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b4f3ce5-d9c0-4a2a-934f-671617187361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StudentAndEmployee_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentAndEmployee.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/StudentAndEmployee_jar/StudentAndEmployee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bd/BdConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/exeption/AgeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/exeption/EmployeeAndStudentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/exeption/NameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/exeption/VYSException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/main/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/person/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/person/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/test.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/StudentAndEmployee.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/bd/BdConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/exeption/AgeException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/exeption/EmployeeAndStudentException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/exeption/NameException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/exeption/VYSException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/main/MainTest$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/main/MainTest$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/main/MainTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/person/Employee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/person/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ru/person/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/test.sql" afterDir="false" />
-    </list>
+    <list default="true" id="6b4f3ce5-d9c0-4a2a-934f-671617187361" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

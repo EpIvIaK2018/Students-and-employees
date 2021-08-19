@@ -8,7 +8,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import ru.ecxeption.EmployeeAndStudentException;
+import ru.exception.EmployeeAndStudentException;
 import ru.person.*;
 import bd.BdConnection;
 import java.sql.SQLException;
@@ -168,7 +168,6 @@ public class MainTest extends Application {
                 btn.setOnAction(event -> {
                     try {
                         Person newPerson = null;
-                        // Спросить про полиморфизм у Бурилло
                         if (!textField4.isSelected()) {
                             newPerson = new Student(textName.getText(), Integer.valueOf(textAge.getText()), textInst.getText());
                             myBD.QueryAddStudent((Student) newPerson);

@@ -1,4 +1,4 @@
-package ru.ecxeption;
+package ru.exception;
 
 import javafx.scene.control.Alert;
 
