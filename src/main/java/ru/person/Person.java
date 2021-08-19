@@ -1,9 +1,9 @@
 package ru.person;
 
-import ru.exeption.AgeException;
-import ru.exeption.EmployeeAndStudentException;
-import ru.exeption.NameException;
-import ru.exeption.VYSException;
+import ru.ecxeption.AgeException;
+import ru.ecxeption.EmployeeAndStudentException;
+import ru.ecxeption.NameException;
+import ru.ecxeption.VYSException;
 
 // Удалить строку не работает
 abstract public class Person {

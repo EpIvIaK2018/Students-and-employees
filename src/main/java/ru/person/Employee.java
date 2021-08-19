@@ -1,6 +1,6 @@
 package ru.person;
 
-import ru.exeption.EmployeeAndStudentException;
+import ru.ecxeption.EmployeeAndStudentException;
 
 public class Employee extends Person {
     private int profit;

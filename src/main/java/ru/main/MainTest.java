@@ -8,7 +8,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import ru.exeption.EmployeeAndStudentException;
+import ru.ecxeption.EmployeeAndStudentException;
 import ru.person.*;
 import bd.BdConnection;
 import java.sql.SQLException;

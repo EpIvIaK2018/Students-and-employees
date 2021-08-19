@@ -2,7 +2,7 @@ package bd;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import ru.exeption.EmployeeAndStudentException;
+import ru.ecxeption.EmployeeAndStudentException;
 import ru.person.*;
 
 import java.sql.*;
