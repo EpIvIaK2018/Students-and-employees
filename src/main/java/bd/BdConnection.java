@@ -11,13 +11,13 @@ import java.util.HashMap;
 public class BdConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/students_employee?autoRecconect=true&useSSL=false&serverTimezone=UTC";
     private static final String login = "EpIvIaK";
-    private static final String password = "1234";
+    private static final String password = "1A2b3c4d5f6g7h";
     private static Connection connect;
     private static PreparedStatement prSt;
     private static BdConnection instance;
     private static HashMap<Person, Integer> personToIdMap = new HashMap<>();
 
-    public static BdConnection getInstance() throws SQLException {
+    public static BdConnection getInstance() {
         if (instance == null) {
             instance = new BdConnection();
         }
@@ -56,7 +56,7 @@ public class BdConnection {
             connect.close();
         }
     }
-    public ObservableList<Person>  ExtractAllUsers() throws SQLException {
+    public ObservableList<Person> ExtractAllUsers() throws SQLException {
         ObservableList<Person> ListAllUsers = FXCollections.observableArrayList();
         connect = DriverManager.getConnection(URL, login, password);
 
@@ -87,6 +87,7 @@ public class BdConnection {
             ListAllUsers.add(employeeCurrently);
             personToIdMap.put(employeeCurrently, result.getInt("id"));
         }
+        connect.close();
         return ListAllUsers;
     }
 
@@ -137,7 +138,7 @@ public class BdConnection {
 
     private static void showHasMap(){
         for (HashMap.Entry<Person, Integer> entry : personToIdMap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
+            //System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
         }
     }
 }
