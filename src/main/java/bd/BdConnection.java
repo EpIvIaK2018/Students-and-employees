@@ -30,9 +30,9 @@ public class BdConnection {
             connect = DriverManager.getConnection(URL, login, password);
             String result = "insert into student(age, name, VYS) values(?, ?, ?)";
             prSt = connect.prepareStatement(result, Statement.RETURN_GENERATED_KEYS);
-            prSt.setInt   (1, s.getAge());
-            prSt.setString(2, s.getName());
-            prSt.setString(3, s.getUniversity());
+            prSt.setInt   (1, Integer.parseInt(s.getAge().toString()));
+            prSt.setString(2, s.getName().toString());
+            prSt.setString(3, s.getUniversity().toString());
             prSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -45,10 +45,10 @@ public class BdConnection {
             connect = DriverManager.getConnection(URL, login, password);
             String result = "insert into employees(age, name, VYS, salary) values(?, ?, ?, ?)";
             prSt = connect.prepareStatement(result);
-            prSt.setInt   (1, e.getAge());
-            prSt.setString(2, e.getName());
-            prSt.setString(3, e.getUniversity());
-            prSt.setInt   (4, e.getSalary());
+            prSt.setInt   (1, Integer.parseInt(e.getAge().toString()));
+            prSt.setString(2, e.getName().toString());
+            prSt.setString(3, e.getUniversity().toString());
+            prSt.setInt   (4, (int) e.getSalary());
             prSt.executeUpdate();
         } catch (SQLException ex) {
             ex.printStackTrace();

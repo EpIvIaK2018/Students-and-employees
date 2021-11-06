@@ -1,8 +1,9 @@
 package ru.main;
 import currencies.Currencies;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.css.Style;
 import javafx.geometry.Side;
 import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
@@ -15,7 +16,7 @@ import ru.exception.EmployeeAndStudentException;
 import ru.person.*;
 import bd.BdConnection;
 import java.sql.SQLException;
-import javafx.beans.property.SimpleObjectProperty;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -30,11 +31,13 @@ public class MainTest extends Application {
     ObservableList<Person> listAllUsers;
     ObservableList<Person> listAllStudents = FXCollections.observableArrayList();
     ObservableList<Person> listAllEmployee = FXCollections.observableArrayList();
+    ObservableList<String> listCurrencies  = FXCollections.observableArrayList("Рубли", "Доллары", "Евро");
+
     TableView<Person> table =  new TableView<>();
     TableView<Person> table2 = new TableView<>();
+    ComboBox<String> currenciesComboBox;
 
     public static void main(String[] args) {
-        System.setProperty("file.encoding", "UTF-8");
         Application.launch(args);
     }
     /*
@@ -67,20 +70,18 @@ public class MainTest extends Application {
             if(!listAllStudents.isEmpty()){
                 table2.setItems(listAllStudents);
             }
-            //System.out.println(listAllEmployee + "\n\n\n\n\n\n");
-            //System.out.println(listAllStudents);
         }
     }
 
     public void start(Stage primaryStage) throws SQLException {
         currencies = Currencies.getInstance();
+        assert currencies != null;
         currencies.loadingCurrencies();
         myBD = BdConnection.getInstance();
         window = primaryStage;
         window.setTitle("Our Table");
         window.setWidth(width);
         window.setHeight(height);
-
         table.setPlaceholder(new Label("Table is has't any workers"));
         table2.setPlaceholder(new Label("Table is has't any students"));
 
@@ -115,7 +116,7 @@ public class MainTest extends Application {
 
         currency = new Label("Валюты: ");
         currency.setText("Доллар: " + currencies.getDollarsCurrency() + " Евро: " + currencies.getEuroCurrency());
-        currency.setStyle("-fx-font-size: 25px; -fx-background-color: black; -fx-text-fill: white; -fx-font-family: sans-serif; -fx-underline: true;\n" +
+        currency.setStyle("-fx-font-size: 25px; -fx-background-color: black; -fx-text-fill: white; -fx-font-family: sans-serif;\n" +
                 "    -fx-font-weight: bold;\n" +
                 "    -fx-underline-color: blue;");
 
@@ -146,7 +147,6 @@ public class MainTest extends Application {
         salaryColumn.setMinWidth(width/5);
         salaryColumn.setCellValueFactory(new PropertyValueFactory<>("salary"));
         salaryColumn.setEditable(true);
-
 
         table.getColumns().addAll(nameColumn, ageColumn, universitiesColumn, statusColumn, salaryColumn);
 
@@ -249,6 +249,8 @@ public class MainTest extends Application {
         stage.setScene(scene);
         stage.show();
     });
+    /******************************************/
+
 
     buttonDeleteAll.setOnAction(actionEvent -> {
         try {
@@ -307,8 +309,8 @@ public class MainTest extends Application {
             width = (int)window.getWidth();
             nameColumn.setMinWidth(width / 5);
             nameColumn.setMaxWidth(width / 5);
-            ageColumn.setMinWidth(width / 5 - 5);
-            ageColumn.setMaxWidth(width / 5 - 5);
+            ageColumn.setMinWidth(width / 5 - 18);
+            ageColumn.setMaxWidth(width / 5 - 18);
             statusColumn.setMinWidth(width/5);
             statusColumn.setMaxWidth(width/5);
             universitiesColumn.setMinWidth(width/5);
@@ -318,8 +320,8 @@ public class MainTest extends Application {
 
             nameColumn2.setMinWidth(width / 4);
             nameColumn2.setMaxWidth(width / 4);
-            ageColumn2.setMinWidth(width / 4 - 5);
-            ageColumn2.setMaxWidth(width / 4 - 5);
+            ageColumn2.setMinWidth(width / 4 - 18);
+            ageColumn2.setMaxWidth(width / 4 - 18);
             statusColumn2.setMinWidth(width/4);
             statusColumn2.setMaxWidth(width/4);
             universitiesColumn2.setMinWidth(width/4);

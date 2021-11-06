@@ -13,7 +13,7 @@ public class Employee extends Person {
     public String toString() {
         return "Работник:\n" + this.getName() + "\n" + this.getAge() + " лет" + "\nОкончил ВУЗ:" + getUniversity() + "\nЗарплата: " + this.profit + " рублей";
     }
-    public int getSalary(){
+    public float getSalary(){
         return this.profit;
     }
 
@@ -21,5 +21,6 @@ public class Employee extends Person {
     public String getTable() {
         return "employees";
     }
+
 }
 

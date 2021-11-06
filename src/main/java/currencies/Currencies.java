@@ -4,6 +4,7 @@ import org.w3c.dom.*;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
 import java.beans.Encoder;
 import java.io.BufferedReader;
@@ -15,21 +16,20 @@ public class Currencies {
     public static Currencies instance;
     private float currencyOfDollar;
     private float currencyOfEuro;
-    public static Currencies getInstance(){
+    public static Currencies getInstance() {
         if(instance == null){
             return new Currencies();
         }
         return null;
     }
-    private Currencies(){
+    private Currencies() {
 
     }
     // Загрузка валют из интернета
     public void loadingCurrencies(){
-        //url = "http://www.cbr.ru/scripts/XML_daily.asp";
         try{
-            URL url = new URL("http://www.cbr.ru/scripts/XML_daily.asp");
             DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            URL url = new URL("http://www.cbr.ru/scripts/XML_daily.asp");
             Document document = documentBuilder.parse(String.valueOf(url));
             NodeList mainNode = document.getDocumentElement().getChildNodes();
             //String D = document.getDocumentElement().getChildNodes().item(10).getLastChild().getTextContent().toString();

@@ -4,7 +4,7 @@ import ru.exception.EmployeeAndStudentException;
 
 public class Student extends Person {
     public Student(String name, int age, String university) throws EmployeeAndStudentException {
-        super(name, age,  university, "Студент");
+        super(name, age,  university, "Студент".trim());
     }
     @Override
     public String toString() {
