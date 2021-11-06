@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b4f3ce5-d9c0-4a2a-934f-671617187361" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bd/BdConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bd/BdConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/currencies/Currencies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/currencies/Currencies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/main/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/main/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/person/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/person/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/person/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/person/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/StudentAndEmployee.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bd/BdConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bd/BdConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/main/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/main/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/person/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/person/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/person/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/person/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/person/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/person/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629710494125</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Исправления мелочные, до более важных.">
+      <created>1636175366981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636175366981</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,10 +149,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="382" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1629191915400" />
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1636175348183">
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1636175362662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1636175348183" />
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1636175362662" />
     <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1631255958528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
