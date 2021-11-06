@@ -11,7 +11,7 @@ import java.util.HashMap;
 public class BdConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/students_employee?autoRecconect=true&useSSL=false&serverTimezone=UTC";
     private static final String login = "EpIvIaK";
-    private static final String password = "1A2b6g";
+    private static final String password = "///";       // Убрал пароль для ГитХаба
     private static Connection connect;
     private static PreparedStatement prSt;
     private static BdConnection instance;
